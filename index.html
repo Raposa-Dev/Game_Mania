@@ -4,11 +4,17 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap" rel="stylesheet">
         <title>Game Mania</title>
-        
+        <!--STYLE-->
+        <link rel="stylesheet" href="./public/styles/reset.css">
+        <link rel="stylesheet" href="./public/styles/home.css">   
     </head>
     <body>
-        <header>
+        <header class="menu">
+            <img src="./public/icons/logo.svg" alt="" class="logo" srcset="">
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -20,33 +26,45 @@
             </nav>
         </header>
         <main>
-            <div>
-                <p>
-                    Game Mania mais pertinho de você! 
-                </p>
+            <article>
 
-                <p>
-                    Conecte-se para ver o melhor do mundo gamer!
-                </p>                
+                <div class="content-left">
+                    <p>
+                        Game Mania mais pertinho de você! 
+                    </p>
 
-                <p>
-                    Você foca em um objetivo, e o nosso é ajudar você a chegar ao seu objetivo!
-                </p>
+                    <p>
+                        Conecte-se para ver o melhor do mundo gamer!
+                    </p>                
 
-                <a href="./src/pages/Singup.html">Get started</a>
+                    <p>
+                        Você foca em um objetivo, e o nosso é ajudar você a chegar ao seu objetivo!
+                    </p>
 
-                <p>G</p><!-- //icone do google vai aqui -->
-                <p>F</p><!-- icone do facebook vei aqui -->
+                    <div class="content-internal">
+
+                        <a class="btn" href="./src/pages/Singup.html">Get started</a>
+
+                    </div>
+
+                </div>
+
+                <div class="content-icon">
+
+                    <img src="./public/icons/google.svg" alt="" srcset=""><!-- //icone do google vai aqui -->
+                    <img src="./public/icons/facebook.svg" alt="" srcset=""> <!-- icone do facebook vei aqui -->
+                    
+                </div>   
+                            
                 
-                
+            </article>
 
-            </div>
-
-            <div>
-                <img src="./public/images/baner-home.svg" alt="" srcset="">
-            </div>
             
-            
+            <figure>
+                <div class="content-banner">
+                    <img src="./public/images/baner-home.svg" alt="" srcset="">
+                </div>
+            </figure>
 
         </main>
         <footer>
