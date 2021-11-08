@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(255, 254, 251);
+    width: 100vw;
+    height: 100vh;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+
+.content > div {
+    flex: 1 1 280px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 30vw;
+    height: 30vh;
+    justify-content: center;
+    margin: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 
+    0 2px 2px rgba(0, 0, 0, 0.1), 
+    0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 
+    0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-one {
+    background: url(../assets/images/MaratonaDiscover.png)no-repeat center/cover;
+}
+
+.card-two {
+    background: url(../assets/images/Progress\ _Outline.svg)no-repeat center/cover;
+}
+
+#btn-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background-color:rgb(19, 165, 82);
+    width: 100px;
+    height: 30px;
+    color: whitesmoke;
+}
+

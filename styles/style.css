@@ -1,0 +1,121 @@
+body {
+    background-color: rgb(25,23,23);
+}
+
+main {
+    width: 95vw;
+    height: 80vh;
+    background-color: rgb(51,51,51);
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem auto;
+    border-radius: 2rem;
+}
+
+.logo {
+    margin-left: 1rem;
+}
+
+p {
+    color: whitesmoke;
+}
+
+.content-left p {
+    font-size: 18px;
+}
+
+.wrapp {
+    width: 100%;
+    height: 100%;
+}
+
+.content-left {
+    background-color: rgb(41,41,41);
+    border-radius: 27px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 80%;
+    padding: 1rem;
+    margin-left: 40px;
+}
+
+.space {
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.content-p {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.image {
+    width: 60%;
+    height: 100%;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+
+}
+
+a.btn {
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    color: whitesmoke;
+    background-color: rgb(19, 165, 82);
+    margin: auto;
+}
+
+a.btn:hover {
+    background-color: rgb(28, 189, 95); 
+}
+
+footer {
+    width: 100vw;
+}
+
+footer div {
+    text-align: center;
+}
+footer p{
+    color: rgb(153, 153, 153);
+}
+
+@media (max-width: 700px) {
+    main {
+        width: 100vw;
+        border: none;
+        box-shadow: unset;
+        border-radius: 0;
+    }
+    footer {
+        font-size: 0.8em;
+    } 
+}
+
+@media (max-width: 430px) {
+    main {
+        flex-direction: column-reverse;
+        align-items: center;
+    }  
+    .image {
+        width: 90%;
+        height: 80%;
+    }
+    .content-left {
+        width: 80%;
+        font-size: 0.8em;
+    }
+    
+}
