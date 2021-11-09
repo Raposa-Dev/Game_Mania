@@ -1,0 +1,96 @@
+.carousel {
+    margin-top: 5em;
+}
+
+.flex {
+	display: flex;
+	gap: 2em;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+  
+.flex > * {
+	flex-grow: 1;
+	flex-basis: 0;
+}
+  
+.card {
+	display: flex;
+	flex-direction: column;
+	min-width: 15rem;
+	max-width: calc(12.5rem + 13vw);
+	background: #fff;
+	border-radius: 0.75em;
+	overflow: hidden;
+	box-shadow: 0 0.25em 0.6em #0005, 0 0.65em 1em #0004;
+	transition: transform 270ms ease;
+	position: relative;
+}
+  
+.card::before {
+	content: "";
+	position: absolute;
+	display: flex;
+	inset: 0;
+	isolation: isolate;
+	mix-blend-mode: color;
+	background: linear-gradient(180deg, #0000 48%, 48%, red, 70%, blue);
+	opacity: 0;
+}
+  
+.card:hover::before {
+	opacity: 1;
+}
+  
+.card:hover {
+	transform: scale(1.05);
+}
+  
+img {
+	display: block;
+	max-width: 100%;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+	height: auto;
+	margin-bottom: 1em;
+}
+  
+.card-body {
+	height: 200px;
+	padding: 1em 0;
+}
+  
+/* h3 {
+	text-align: center;
+	color: #999fff;
+	font-size: 1.3rem;
+	margin-bottom: 0.5rem;
+} */
+  
+p {
+	color: #0009;
+	font-style: italic;
+	font-weight: 700;
+	text-align: center;
+	margin: 1em auto;
+	padding-inline: 0.5em;
+	max-width: 35ch;
+}
+
+.card .btn-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+}
+
+.card .btn-div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    border-radius: 10px;
+    color: ivory;
+    width: 100px;
+    height: 40px;
+}
