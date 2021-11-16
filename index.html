@@ -14,6 +14,8 @@
     <title>Fuchs_Code</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/popup.scss">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
     <header>
@@ -73,6 +75,15 @@
       <div class="image">
         <img src="./assets/images/baner-home.svg" alt="" />
       </div>
+
+      <div class="popup-overlay">
+        <div class="popup">
+          <p>If you select "close" a cookie will be created for one minute. If "submit" is selected a cookie will be set for 5
+            minutes. This can be used to remind users that dont sign up to do it, and stop bugging users that do sign up.</p>
+          <a href="javascript:;" class="close">Close</a>
+          <a href="javascript:;" class="submit">Submit</a>
+        </div>
+      </div>
     </main>
     <footer>
       <div>
@@ -81,6 +92,8 @@
       </div>
     </footer>
 
+    
+    <script src="./scripts/popup.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>
