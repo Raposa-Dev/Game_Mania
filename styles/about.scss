@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(41, 41, 41);
+}
+
+.content article {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 5px;
+    color: whitesmoke;
+}
+
+.content article p {
+    margin: 10px 0 0 30px;
+
+}

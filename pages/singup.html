@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <title>Game Mania</title>
-    <link rel="stylesheet" href="../styles/skills.css">
+    <link rel="stylesheet" href="../styles/singup.css">
     <link rel="stylesheet" href="../styles/reset.css" />
   </head>
   <body>
@@ -33,9 +33,6 @@
             <a href="../pages/contacts.html">Contacts</a>
           </li>
           <li>
-            <a href="../pages/setting.html">Setting</a>
-          </li>
-          <li>
             <a href="#">Singup</a>
           </li>
           <li>
@@ -45,8 +42,80 @@
       </nav>
     </header>
     <main>
+
+      <div class="images">
+        <img id="imgs" src="../assets/images/login.svg" alt="" srcset="">
+      </div>
+
+      <div class="wrapper">
+        <div class="title-text">
+          <div class="title login">
+            <h3>
+              Login
+            </h3>
+            
+          </div>
+          <div class="title signup">
+            <h3>
+              Create  Account
+            </h3>
+            
+          </div>
+        </div>
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+            <form action="#" class="login">
+              <div class="field">
+                <input type="text" placeholder="Email Address" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required>
+              </div>
+              <div class="pass-link">
+                <a href="#">Forgot password?</a>
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Login">
+              </div>
+              <div class="signup-link">
+               <p>
+                 Not a member?
+               </p>  
+               <a href="">Signup now</a>
+              </div>
+            </form>
+              <!-- /// -->
+            <form action="#" class="signup">
+              <div class="field">
+                <input type="text" placeholder="Email Address" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required>
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Confirm password" required>
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Signup">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+     
       
     </main>
     <script src="../scripts/main.js"></script>
+    <script src="../scripts/singup.js"></script>
+
   </body>
 </html>

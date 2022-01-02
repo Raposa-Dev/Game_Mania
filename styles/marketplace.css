@@ -1,238 +1,284 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	text-decoration: none;
-}
-
-header a {
-	margin-top: 15px;
-}
-
-header img {
-	margin: 15px;
-}
-
-#menu li a {
-	text-decoration: none;
-}
-
-body{
-	display: flex;
-	flex-direction: column;
-    background-color: rgb(38, 38, 38);
-    width: 100%;
-    height: 100%;
-}
-
-main {
-	width: 100%;
+html, body {
+  width: 100%;
+  height: 100%;
 }
 
 .container {
-	margin: auto;
-	padding: 2em;
-	max-width: 68rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #292929;
 }
 
 .carousel-one, .carousel-two {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	width: 100%;
-	height: 300px;
-	border-radius: 0.75em;
-	background-color: #EDECEC;
-	
-}
-
-.form-control {
-	border-radius: 27px;
-}
-.input-group-text {
-	background-color: whitesmoke;
-}
-
-#basic-addon1 {
-	border-radius: 0 27px 27px 0;
-}
-
-.carousel img{
-	border-radius: 10px;
-}
-
-.carousel-one .title-carousel {
-	color: whitesmoke;
-	background-color: blue;
-	border-radius: 8px;
-	width: 50px;
-	height: 20px;
-	font-size: 13px;
-}
-
-.baner-p {
-	padding: 5px;
-	font-size: 80%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: baseline;
-	width: 100%;
-	height: 80%;
-}
-
-.baner-p p {
-	color: crimson;
-	margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 68%;
+  height: 300px;
+  border-radius: 0.75em;
+  background-color: #EDECEC;
 }
 
 .carousel-one {
-	margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .carousel-two {
-	margin-top: 20px;
+  margin-bottom: 40px;
 }
 
-.carousel-two .title-carousel {
-	color: black;
+.container .area-cards {
+  max-width: 90%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: (300px)[3];
+      grid-template-columns: repeat(3, 300px);
+  -ms-grid-columns: (300px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 300px);
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  padding: 30px;
 }
 
-.carousel-area {
-	width: 200px;
-	height:	90%;
-	border-radius: 0.75em;
-	
-}
-.carousel-one, .carousel-two {
-	padding: 15px;
+.internal-card {
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.baner-text {
-	width: 50%;
-	height: 90%;
+.internal-card .paragraph {
+  margin-top: 0.5em;
+  font-size: 12px;
+  width: 100%;
+  height: 90px;
+  padding: 1px;
 }
 
+.image img {
+  width: 200px;
+  margin: 0 0 15px 0;
+}
+
+.cards a {
+  text-decoration: none;
+}
+
+.container-cards {
+  width: 260px;
+  height: 435px;
+}
+
+.internal-card {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #c0baba;
+}
+
+.cards {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards a {
+  width: 170px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: whitesmoke;
+  border-radius: 20px;
+  background-color: #259b23;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.cards a:hover {
+  background-color: #2ABB27;
+}
+
+#price-c {
+  color: green;
+  position: relative;
+}
+
+.carrousel {
+  width: 70%;
+  height: 300px;
+  background-color: #d7dadf;
+  border-radius: 20px;
+  margin: 1em;
+}
+
+hr {
+  width: 100%;
+  margin: 20px 0 20px 0;
+  border-color: black;
+}
+
+/*footer*/
 footer .footer {
-	width: 100%;
-	height: 100%;
-	font-size: 14px;
-	display: flex;
-	justify-content: space-around;
-	flex-direction: row;
-	height: 300px;
-	background-color: #A9A5A5;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0 20px 0;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 300px;
 }
 
 footer h3 {
-	font-size: 18px;
+  font-size: 18px;
 }
 
+footer #p-footer-end {
+  margin-bottom: 20px;
+}
 
 footer {
-	width: 100%;
+  width: 100%;
+  background-color: #A9A5A5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-footer-one {
-	width: 30%;
-	padding: 5px;
+  width: 30%;
+  padding: 5px;
 }
 
 .section-footer-two {
-	width: 30%;
-	padding: 5px;
+  width: 30%;
+  padding: 5px;
 }
 
 .section-footer-tree {
-	width: 30%;
-	padding: 5px;
+  width: 30%;
+  padding: 5px;
 }
 
 .section-footer-one,
 .section-footer-two,
 .section-footer-tree {
-	display: flex;
-	flex-direction: column;
-	align-items: baseline;
-	
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 footer p {
-	
-	margin: 16px 0 0 0;
+  margin: 16px 0 0 0;
 }
 
 footer h3 {
-	margin-left: 20px;
+  margin-left: 20px;
 }
 
-
-
 @media (max-width: 978px) {
-	.baner-p {
-		width: 100%;
-		height: 300px;
-	}
-
-	.baner-text{
-		height: 310px;
-	}
-
-	.carousel-one, .carousel-two {
-		width: 50%;
-		height: 600px;
-		margin: auto;
-	}
-
-	.baner-text {
-		width: 100%;
-	}
-
-	.carousel-area {
-		height: 250px;
-	}
-
-	.carousel-one {
-		margin-bottom: 20px;
-	}
-
-	.carousel-two {
-		margin-top: 20px;
-	}
-
-	.baner-ref-tex {
-		height: 200px;
-	}
-
-	.carousel-two .baner-text {
-		height: 250px;
-	}
+  .carousel-one, .carousel-two {
+    width: 50%;
+    height: 600px;
+    margin: auto;
+  }
+  .carousel-one {
+    margin-top: 40px;
+  }
+  .carousel-two {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 600px) {
-	footer .footer {
-		flex-direction: column;
-		height: 100%;
-		margin: 0 auto;
-	}
-	.baner-text {
-		width: 100%;
-
-	}
-
-	.carousel-one, .carousel-two {
-		width: 70%;
-	}
-
-	.section-footer-one,
-	.section-footer-two,
-	.section-footer-tree {
-		width: 50%;
-		margin: 0 auto;
-	}
-
-	footer {
-		height: 650px;
-	}
-	
+  footer .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .baner-text {
+    width: 100%;
+  }
+  .carousel-one, .carousel-two {
+    width: 70%;
+  }
+  .section-footer-one,
+  .section-footer-two,
+  .section-footer-tree {
+    width: 50%;
+    margin: 0 auto;
+  }
+  footer {
+    height: 650px;
+  }
 }
+/*# sourceMappingURL=marketplace.css.map */
